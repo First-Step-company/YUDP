@@ -2,6 +2,7 @@
 'use client';
 import Head from 'next/head';
 import React from 'react'
+import Navbar from '@/app/components/Navbar';
 
 const servicesDetails = {
   1: {
@@ -37,6 +38,7 @@ export default function ServiceDetail({ params }) {
 
   return (
     <>
+    <Navbar/>
       <Head>
         <title>{service.name} - Service Details</title>
         <meta name="description" content={service.description} />

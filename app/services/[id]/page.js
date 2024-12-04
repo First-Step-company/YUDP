@@ -1,8 +1,8 @@
-// app/services/[id]/page.js
 'use client';
 import Head from 'next/head';
-import React from 'react'
+import React from 'react';
 import Navbar from '@/app/components/Navbar';
+import Image from 'next/image';  // Import Image component
 
 const servicesDetails = {
   1: {
@@ -29,7 +29,7 @@ const servicesDetails = {
 };
 
 export default function ServiceDetail({ params }) {
-    const { id } = React.use(params);
+  const { id } = React.use(params);
   const service = servicesDetails[id];
 
   if (!service) {
@@ -38,7 +38,7 @@ export default function ServiceDetail({ params }) {
 
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <Head>
         <title>{service.name} - Service Details</title>
         <meta name="description" content={service.description} />
@@ -56,9 +56,11 @@ export default function ServiceDetail({ params }) {
 
           {/* Image gallery */}
           <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
-            <img
+            <Image
               alt={service.imageAlt}
               src={service.imageSrc}
+              width={500} // Adjust width as needed
+              height={667} // Adjust height as needed
               className="aspect-[3/4] w-4 rounded-lg object-cover"
             />
           </div>
@@ -80,13 +82,12 @@ export default function ServiceDetail({ params }) {
 
               {/* Contact button */}
               <button
-  type="button"
-  onClick={() => window.open('https://wa.me/212665830816', '_blank')}
-  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
->
-  Contact us on WhatsApp
-</button>
-
+                type="button"
+                onClick={() => window.open('https://wa.me/212665830816', '_blank')}
+                className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              >
+                Contact us on WhatsApp
+              </button>
             </div>
           </div>
         </div>

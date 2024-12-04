@@ -1,6 +1,7 @@
 // app/services/[id]/page.js
 'use client';
 import Head from 'next/head';
+import React from 'react'
 
 const servicesDetails = {
   1: {
@@ -27,7 +28,7 @@ const servicesDetails = {
 };
 
 export default function ServiceDetail({ params }) {
-  const { id } = params;
+    const { id } = React.use(params);
   const service = servicesDetails[id];
 
   if (!service) {

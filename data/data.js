@@ -3,7 +3,7 @@ import Canva from '@/public/CanvaProAccouts.gif';
 export const Services = [
     {
       id: 1,
-      name: 'Web Development',
+      name: 'Web Developmen',
       price: '$500',
       imageSrc: SteamCard,  // Add your image URL here
       imageAlt: 'Web development services',
@@ -12,7 +12,7 @@ export const Services = [
     {
       id: 2,
       name: 'SEO Optimization',
-      price: '$300',
+      price: '$30',
       imageSrc: Canva,
       imageAlt: 'SEO optimization services',
       href: '/services/2',

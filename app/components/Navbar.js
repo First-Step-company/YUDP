@@ -45,9 +45,9 @@ export default function Navbar() {
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only text-blue-900/60">YUDP</span>
-            <Image src={Logo} width={50} height={50} alt="Logo"/>
+          <Link href="/" className="-m-1.5 p-1.5 ">
+            <Image src={Logo} width={80} height={80} alt="Logo"/>
+            {/* <span className=" text-blue-900/60">YUDP</span> */}
           </Link>
         </div>
         <div className="flex lg:hidden">

@@ -48,25 +48,23 @@ export default function ServiceDetail({ params }) {
 
           {/* Service details */}
           <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
-            <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+            <div className="lg:col-span-2 lg:border-r lg:border-gray-300 lg:pr-2">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{service.name}</h1>
-            </div>
-
-            <div className="mt-4 lg:row-span-3 lg:mt-0">
-              <h2 className="text-black">Service information</h2>
-
               {/* Description */}
               <div className="mt-6 space-y-6">
                 <p className="text-base text-black">{service.description}</p>
               </div>
+            </div>
 
+            <div className="mt-4 lg:row-span-3 lg:mt-0">
+              <h2 className="text-black">For price informations, please contact us at:</h2>
               {/* Contact button */}
               <button
                 type="button"
                 onClick={() => window.open('https://wa.me/212665830816', '_blank')}
-                className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="mt-2 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
-                Contact us on WhatsApp
+                Buy it & Make it yours
               </button>
             </div>
           </div>

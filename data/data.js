@@ -1,13 +1,14 @@
 import SteamCard from '@/public/steam-card.gif';
 import Canva from '@/public/CanvaProAccouts.gif';
 export const Services = [
+    // Steam Cards
     {
       id: 2,
-      name: 'Web Development',
+      name: 'Steam Cards',
       price: '$500',
       imageSrc: SteamCard,  // Add your image URL here
-      imageAlt: 'Web development services',
-      description:'hi',
+      imageAlt: 'Steam Cards : 5$, 10$, 20$, 50$, 100$ ...',
+      description:'We provide all Steam Cards.',
       href: '/services/1',  // Link to the service details page
     },
     {

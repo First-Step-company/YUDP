@@ -1,42 +1,11 @@
 // app/services/page.js
 import Link from 'next/link';
 import Navbar from './components/Navbar';
+import Image from "next/image";
+import { Services } from '@/data/data';
 
-const services = [
-  {
-    id: 1,
-    name: 'Web Development',
-    price: '$500',
-    imageSrc: '/images/web-development.jpg',  // Add your image URL here
-    imageAlt: 'Web development services',
-    href: '/services/1',  // Link to the service details page
-  },
-  {
-    id: 2,
-    name: 'SEO Optimization',
-    price: '$300',
-    imageSrc: '/images/seo-optimization.jpg',
-    imageAlt: 'SEO optimization services',
-    href: '/services/2',
-  },
-  {
-    id: 3,
-    name: 'Digital Marketing',
-    price: '$400',
-    imageSrc: '/images/digital-marketing.jpg',
-    imageAlt: 'Digital marketing services',
-    href: '/services/3',
-  },
-  {
-    id: 4,
-    name: 'Content Creation',
-    price: '$350',
-    imageSrc: '/images/content-creation.jpg',
-    imageAlt: 'Content creation services',
-    href: '/services/4',
-  },
-];
 
+const services = [...Services];
 export default function ServicesPage() {
   return (<>
     <Navbar />
@@ -47,11 +16,7 @@ export default function ServicesPage() {
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {services.map((service) => (
             <div key={service.id} className="group relative">
-              <img
-                alt={service.imageAlt}
-                src={service.imageSrc}
-                className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-              />
+                <Image src={service.imageSrc} width={300} height={300} alt={service.imageAlt}/>
               <div className="mt-4 flex justify-between">
                 <div>
                   <h3 className="text-sm text-gray-700">

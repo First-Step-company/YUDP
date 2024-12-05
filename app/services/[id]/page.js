@@ -3,30 +3,9 @@ import Head from 'next/head';
 import React from 'react';
 import Navbar from '@/app/components/Navbar';
 import Image from 'next/image';  // Import Image component
+import { Services } from '@/data/data';
 
-const servicesDetails = {
-  1: {
-    name: 'Web Development',
-    description: 'Full-stack web development services.',
-    price: '$500',
-    imageSrc: '/images/web-development.jpg',  // Add image URL
-    imageAlt: 'Web development services'
-  },
-  2: {
-    name: 'SEO Optimization',
-    description: 'Improve your search engine rankings.',
-    price: '$300',
-    imageSrc: '/images/seo-optimization.jpg',  // Add image URL
-    imageAlt: 'SEO optimization services'
-  },
-  3: {
-    name: 'Digital Marketing',
-    description: 'Social media and ad campaigns to grow your business.',
-    price: '$400',
-    imageSrc: '/images/digital-marketing.jpg',  // Add image URL
-    imageAlt: 'Digital marketing services'
-  },
-};
+const servicesDetails = [...Services];
 
 export default function ServiceDetail({ params }) {
   const { id } = React.use(params);
@@ -59,7 +38,7 @@ export default function ServiceDetail({ params }) {
             <Image
               alt={service.imageAlt}
               src={service.imageSrc}
-              width={500} // Adjust width as needed
+              width={5000} // Adjust width as needed
               height={667} // Adjust height as needed
               className="aspect-[3/4] w-4 rounded-lg object-cover"
             />

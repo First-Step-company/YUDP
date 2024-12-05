@@ -27,7 +27,7 @@ export const Services = [
       name: 'Movies & Series',
       imageSrc: netflixshahid,
       price : '12$',
-      imageAlt: 'We provide all Netflix & Shahid Accounts (1/3/6/12)months .',
+      imageAlt: 'Netflix & Shahid Accounts (1/3/6/12)months .',
       description:'We provide all Steam Cards.',
       href: '/services/3',
     },
@@ -36,7 +36,8 @@ export const Services = [
       name: 'Spotiy & Apple Music',
       imageSrc: spoitune,
       price : '12$',
-      imageAlt: 'Content creation services',
+      imageAlt: 'Spotify & Apple Music Accounts (1/3/6/12)months .',
+      description: 'We provide all Spotify & Apple Music Accounts',
       href: '/services/4',
     },
   ];

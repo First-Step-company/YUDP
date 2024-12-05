@@ -9,7 +9,7 @@ const servicesDetails = [...Services];
 
 export default function ServiceDetail({ params }) {
   const { id } = React.use(params);
-  const service = servicesDetails[id];
+  const service = servicesDetails[id-1];
 
   if (!service) {
     return <div>Service not found</div>;

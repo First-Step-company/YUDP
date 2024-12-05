@@ -2,15 +2,15 @@ import SteamCard from '@/public/steam-card.gif';
 import Canva from '@/public/CanvaProAccouts.gif';
 export const Services = [
     {
-      id: 1,
-      name: 'Web Developmen',
+      id: 2,
+      name: 'Web Development',
       price: '$500',
       imageSrc: SteamCard,  // Add your image URL here
       imageAlt: 'Web development services',
       href: '/services/1',  // Link to the service details page
     },
     {
-      id: 2,
+      id: 3,
       name: 'SEO Optimization',
       price: '$30',
       imageSrc: Canva,
@@ -18,7 +18,7 @@ export const Services = [
       href: '/services/2',
     },
     {
-      id: 3,
+      id: 4,
       name: 'Digital Marketing',
       price: '$400',
       imageSrc: '/images/digital-marketing.jpg',
@@ -26,7 +26,7 @@ export const Services = [
       href: '/services/3',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Content Creation',
       price: '$350',
       imageSrc: '/images/content-creation.jpg',

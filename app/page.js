@@ -33,13 +33,13 @@ export default function ServicesPage() {
                 type="button"
                 onClick={() => window.open('https://wa.me/212665830816', '_blank')}
                 className="mb-5 mt-5 h-[40px] w-full items-center text-center  rounded-md border border-transparent bg-indigo-600 px-8  text-base font-medium text-white hover:bg-indigo-700 "
-              >
+                >
                 Contact us on WhatsApp
               </button>
                 {/* <p className="text-sm font-medium text-gray-900">{service.price}</p> */}
               </div>
             </div>
-          ))}
+            ))}
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ export const Services = [
     {
       id: 2,
       name: 'Steam Cards',
+      price:'4$',
       imageSrc: SteamCard,  // Add your image URL here
       imageAlt: 'Steam Cards : 5$, 10$, 20$, 50$, 100$ ...',
       description:'We provide all Steam Cards.',
@@ -16,6 +17,7 @@ export const Services = [
       id: 3,
       name: 'Canva Accounts',
       imageSrc: Canva,
+      price : '1$',
       imageAlt: 'Canva Accounts (1/3/6/12)months / life time',
       description:'We provide Canva Accounts .',
       href: '/services/2',
@@ -24,6 +26,7 @@ export const Services = [
       id: 4,
       name: 'Movies & Series',
       imageSrc: netflixshahid,
+      price : '12$',
       imageAlt: 'We provide all Netflix & Shahid Accounts (1/3/6/12)months .',
       description:'We provide all Steam Cards.',
       href: '/services/3',
@@ -32,6 +35,7 @@ export const Services = [
       id: 5,
       name: 'Spotiy & Apple Music',
       imageSrc: spoitune,
+      price : '12$',
       imageAlt: 'Content creation services',
       href: '/services/4',
     },

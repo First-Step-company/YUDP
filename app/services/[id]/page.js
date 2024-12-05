@@ -58,6 +58,7 @@ export default function ServiceDetail({ params }) {
 
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="text-black">For price informations, please contact us at:</h2>
+              <strong className="text-black">from {service.price}</strong>
               {/* Contact button */}
               <button
                 type="button"

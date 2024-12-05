@@ -18,8 +18,8 @@ export default function ServicesPage() {
           {services.map((service) => (
             <div key={service.id} className="flex group relative flex-col items-center border border-black/15 rounded-3xl">
                 <Image src={service.imageSrc} width={300} height={300} alt={service.imageAlt}/>
-              <div className="mt-4 flex flex-col items-center">
-                <div>
+              <div className="mt-4 flex items-center">
+                <div className='flex flex-col mr-6'>
                   <h3 className="text-sm text-gray-700">
                     <Link href={service.href}>
                         <span aria-hidden="true" className="absolute inset-0" />
@@ -28,6 +28,7 @@ export default function ServicesPage() {
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">{service.imageAlt}</p>
                 </div>
+                <p className="rounded-full text-white font-bold bg-red-600 w-10 text-center">{service.price}</p>
                 {/* Contact button */}
               {/* <button
                 type="button"
@@ -36,7 +37,6 @@ export default function ServicesPage() {
                 >
                 Contact us on WhatsApp
               </button> */}
-                {/* <p className="text-sm font-medium text-gray-900">{service.price}</p> */}
               </div>
 
             </div>

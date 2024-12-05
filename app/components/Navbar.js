@@ -22,7 +22,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import { Image } from "next/image";
+import Image  from "next/image";
 import Logo from '@/public/logo.png';
 import Link from 'next/link';
 

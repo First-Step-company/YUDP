@@ -23,7 +23,7 @@ export default function ServiceDetail({ params }) {
         <meta name="description" content={service.description} />
       </Head>
 
-      <div className="bg-white">
+      <div className="bg-white flex items-center">
         <div className="pt-6">
           {/* Breadcrumb navigation */}
           <nav aria-label="Breadcrumb">
@@ -34,12 +34,12 @@ export default function ServiceDetail({ params }) {
           </nav>
 
           {/* Image gallery */}
-          <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8">
+          <div className="flex items-center sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8 ">
             <Image
               alt={service.imageAlt}
               src={service.imageSrc}
-              width={5000} // Adjust width as needed
-              height={667} // Adjust height as needed
+              width={300} // Adjust width as needed
+              height={367} // Adjust height as needed
               className="rounded-lg object-cover"
             />
           </div>

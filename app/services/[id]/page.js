@@ -40,7 +40,7 @@ export default function ServiceDetail({ params }) {
               src={service.imageSrc}
               width={5000} // Adjust width as needed
               height={667} // Adjust height as needed
-              className="aspect-[3/4] w-4 rounded-lg object-cover"
+              className="rounded-lg object-cover"
             />
           </div>
 

@@ -22,6 +22,9 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { Image } from "next/image";
+import Logo from '@/public/logo.png';
+import Link from 'next/link';
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -42,14 +45,10 @@ export default function Navbar() {
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            />
-          </a>
+          <Link href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only text-blue-900/60">YUDP</span>
+            <Image src={Logo} width={50} height={50} alt="Logo"/>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button

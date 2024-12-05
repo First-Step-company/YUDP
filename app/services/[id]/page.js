@@ -4,6 +4,8 @@ import React from 'react';
 import Navbar from '@/app/components/Navbar';
 import Image from 'next/image';  // Import Image component
 import { Services } from '@/data/data';
+import Link from 'next/link';
+
 
 const servicesDetails = [...Services];
 
@@ -23,12 +25,12 @@ export default function ServiceDetail({ params }) {
         <meta name="description" content={service.description} />
       </Head>
 
-      <div className="bg-white flex items-center">
-        <div className="pt-6">
+      <div className="bg-white ">
+        <div className="pt-6 flex items-center flex-col">
           {/* Breadcrumb navigation */}
-          <nav aria-label="Breadcrumb">
+          <nav aria-label="Breadcrumb" className='w-full'>
             <ol role="list" className="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-              <li className="text-sm font-medium text-gray-900">Services</li>
+              <li className="text-sm font-medium text-gray-900"><Link href={'/'}>Services</Link></li>
               <li className="text-sm font-medium text-gray-900">{service.name}</li>
             </ol>
           </nav>
@@ -51,12 +53,11 @@ export default function ServiceDetail({ params }) {
             </div>
 
             <div className="mt-4 lg:row-span-3 lg:mt-0">
-              <h2 className="sr-only">Service information</h2>
-              <p className="text-3xl tracking-tight text-gray-900">{service.price}</p>
+              <h2 className="text-black">Service information</h2>
 
               {/* Description */}
               <div className="mt-6 space-y-6">
-                <p className="text-base text-gray-900">{service.description}</p>
+                <p className="text-base text-black">{service.description}</p>
               </div>
 
               {/* Contact button */}

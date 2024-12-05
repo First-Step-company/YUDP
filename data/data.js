@@ -7,6 +7,7 @@ export const Services = [
       price: '$500',
       imageSrc: SteamCard,  // Add your image URL here
       imageAlt: 'Web development services',
+      description:'hi',
       href: '/services/1',  // Link to the service details page
     },
     {

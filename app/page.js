@@ -18,7 +18,7 @@ export default function ServicesPage() {
           {services.map((service) => (
             <div key={service.id} className="flex group relative flex-col items-center border border-black/15 rounded-3xl">
                 <Image src={service.imageSrc} width={300} height={300} alt={service.imageAlt}/>
-              <div className="mt-4 flex flex-col  items-center">
+              <div className="mt-4 flex flex-col items-center">
                 <div>
                   <h3 className="text-sm text-gray-700">
                     <Link href={service.href}>
@@ -28,16 +28,17 @@ export default function ServicesPage() {
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">{service.imageAlt}</p>
                 </div>
-                              {/* Contact button */}
-              <button
+                {/* Contact button */}
+              {/* <button
                 type="button"
                 onClick={() => window.open('https://wa.me/212665830816', '_blank')}
                 className="mb-5 mt-5 h-[40px] w-full items-center text-center  rounded-md border border-transparent bg-indigo-600 px-8  text-base font-medium text-white hover:bg-indigo-700 "
                 >
                 Contact us on WhatsApp
-              </button>
+              </button> */}
                 {/* <p className="text-sm font-medium text-gray-900">{service.price}</p> */}
               </div>
+
             </div>
             ))}
         </div>

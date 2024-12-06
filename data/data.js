@@ -12,6 +12,9 @@ export const Services = [
       imageAlt: 'Steam Cards : 5$, 10$, 20$, 50$, 100$ ...',
       description:'We provide all Steam Cards.',
       href: '/services/1',  // Link to the service details page
+      popular:true,
+      categorie:'cards',
+      categorieId:''
     },
     {
       id: 3,
@@ -21,6 +24,9 @@ export const Services = [
       imageAlt: 'Canva Accounts (1/3/6/12)months / life time',
       description:'We provide Canva Accounts .',
       href: '/services/2',
+      popular:true,
+      categorie:'accounts',
+      categorieId:''
     },
     {
       id: 4,
@@ -30,6 +36,8 @@ export const Services = [
       imageAlt: 'Netflix & Shahid Accounts (1/3/6/12)months .',
       description:'We provide all Steam Cards.',
       href: '/services/3',
+      categorie:'Movies & Series',
+      categorieId:''
     },
     {
       id: 5,
@@ -39,5 +47,7 @@ export const Services = [
       imageAlt: 'Spotify & Apple Music Accounts (1/3/6/12)months .',
       description: 'We provide all Spotify & Apple Music Accounts',
       href: '/services/4',
+      categorie:'music',
+      categorieId:''
     },
   ];

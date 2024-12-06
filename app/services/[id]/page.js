@@ -5,6 +5,7 @@ import Navbar from '@/app/components/Navbar';
 import Image from 'next/image';  // Import Image component
 import { Services } from '@/data/data';
 import Link from 'next/link';
+import NotFound from '@/app/components/NotFound';
 
 
 const servicesDetails = [...Services];
@@ -14,7 +15,7 @@ export default function ServiceDetail({ params }) {
   const service = servicesDetails[id-1];
 
   if (!service) {
-    return <div>Service not found</div>;
+    return <NotFound/>
   }
 
   return (

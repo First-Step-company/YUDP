@@ -4,7 +4,7 @@ export function Footer() {
   return (<>
     <footer className="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
       <Typography color="black" className="font-normal ml-3">
-        &copy; {new Date().getFullYear()} Material Tailwind
+        &copy; {new Date().getFullYear()} First Step
       </Typography>
       <ul className="flex flex-wrap items-center gap-y-2 gap-x-8 mr-5" color="black">
         <li>

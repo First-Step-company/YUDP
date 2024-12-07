@@ -2,6 +2,7 @@ import SteamCard from '@/public/steam-card.gif';
 import Canva from '@/public/CanvaProAccouts.gif';
 import netflixshahid from '@/public/netflixshahidpop.png';
 import spoitune from '@/public/spoitune.png';
+import gamesKeyAccounts from '@/public/gamesKeyAccounts.gif';
 export const Services = [
     // Steam Cards
     {
@@ -43,6 +44,17 @@ export const Services = [
       id: 5,
       name: 'Spotiy & Apple Music',
       imageSrc: spoitune,
+      price : '12$',
+      imageAlt: 'Spotify & Apple Music Accounts (1/3/6/12)months .',
+      description: 'We provide all Spotify & Apple Music Accounts',
+      href: '/services/4',
+      categorie:'music',
+      categorieId:''
+    },
+    {
+      id: 6,
+      name: 'Games Key & Accounts',
+      imageSrc: gamesKeyAccounts,
       price : '12$',
       imageAlt: 'Spotify & Apple Music Accounts (1/3/6/12)months .',
       description: 'We provide all Spotify & Apple Music Accounts',

@@ -57,7 +57,7 @@ export const Services = [
       imageSrc: gamesKeyAccounts,
       price : '8$',
       imageAlt: 'Games Key & Accounts  .',
-      description: 'We provide all Spotify & Apple Music Accounts',
+      description: 'We provide all Game Key & Accounts.',
       href: '/services/4',
       popular: true,
       categorie:'Key & Accounts',

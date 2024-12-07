@@ -10,7 +10,7 @@ import {
 
   export function CardDefault({ service }) {
     return (
-      <Card className="mt-6 w-96 shadow-md hover:shadow-lg transition-shadow duration-300">
+      <Card className="mt-6 max-w-72 shadow-md hover:shadow-lg transition-shadow duration-300">
         {/* Center the image in the CardHeader */}
         <CardHeader className="relative flex justify-center items-center w-full h-full">
           <Image
@@ -25,7 +25,7 @@ import {
           <Typography variant="h5" color="blue-gray" className="mb-2">
             {service.name}
           </Typography>
-          <Typography>{service.description}</Typography>
+          <Typography className="max-w-48">{service.description}</Typography>
         </CardBody>
         <CardFooter className="pt-0 flex justify-between items-center space-x-4">
           <Button className="text-white bg-[#8A84F1] px-4 py-2">

@@ -35,7 +35,6 @@ export default function ServiceDetail({ params }) {
               <li className="text-sm font-medium text-gray-900">{service.name}</li>
             </ol>
           </nav>
-
           {/* Image gallery */}
           <div className="flex items-center sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-1 lg:gap-x-8 lg:px-8 ">
             <Image

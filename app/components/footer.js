@@ -14,7 +14,7 @@ export function Footer() {
             color="black"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            About Us
+            Instagram
           </Typography>
         </li>
         <li>
@@ -24,7 +24,7 @@ export function Footer() {
             color="black"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            License
+            Facebook
           </Typography>
         </li>
         <li>
@@ -34,7 +34,7 @@ export function Footer() {
             color="black"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            Contribute
+            Tiktok
           </Typography>
         </li>
         <li>

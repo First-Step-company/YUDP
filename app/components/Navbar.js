@@ -28,10 +28,10 @@ import Link from 'next/link';
 import { Services } from '@/data/data';
 
 const products = [...Services]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+// const callsToAction = [
+//   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+//   { name: 'Contact sales', href: '#', icon: PhoneIcon },
+// ]
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -81,7 +81,7 @@ export default function Navbar() {
                   </div>
                 ))}
               </div>
-              <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+              {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                 {callsToAction.map((item) => (
                   <Link
                     key={item.name}
@@ -92,7 +92,7 @@ export default function Navbar() {
                     {item.name}
                   </Link>
                 ))}
-              </div>
+              </div> */}
             </PopoverPanel>
           </Popover>
 
@@ -138,7 +138,7 @@ export default function Navbar() {
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
+                    {[...products].map((item) => (
                       <DisclosureButton
                         key={item.name}
                         as="a"

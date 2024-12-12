@@ -35,7 +35,7 @@ export const Services = [
       imageSrc: netflixshahid,
       price : '12$',
       imageAlt: 'Netflix & Shahid Accounts (1/3/6/12)months .',
-      description:'We provide Netflix & Shahid Accounts',
+      description:'We provide all Steam Cards.',
       href: '/services/3',
       categorie:'Movies & Series',
       categorieId:''
@@ -53,14 +53,14 @@ export const Services = [
     },
     {
       id: 6,
-      name: 'iptv',
+      name: 'Games Key & Accounts',
       imageSrc: gamesKeyAccounts,
       price : '8$',
-      imageAlt: 'IPTV FOR ENJOTING YOU TIME',
-      description: 'IPTV FOR ENJOTING YOU TIME',
+      imageAlt: 'Games Key & Accounts  .',
+      description: 'We provide all Game Key & Accounts.',
       href: '/services/4',
       popular: true,
-      categorie:'cards',
+      categorie:'Key & Accounts',
       categorieId:''
     },
   ];

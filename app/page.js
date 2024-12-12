@@ -27,7 +27,7 @@ export default function ServicesPage() {
     <>
       <Navbar />
       <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:py-12 lg:py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Filter Panel */}
             <div className="col-span-1">
@@ -49,9 +49,9 @@ export default function ServicesPage() {
 
             {/* Services Section */}
             <div className="col-span-3">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900">Our Services</h2>
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-6">Our Services</h2>
 
-              <div className="mt-6 grid grid-cols-1 gap-y-4 gap-x-4 sm:grid-cols-2 sm:gap-x-[240px] lg:grid-cols-3 lg:gap-y-8 lg:gap-x-8">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {filteredServices.map((service) => (
                   <Link key={service.id} href={`/services/${service.id - 1}`}>
                     <CardDefault

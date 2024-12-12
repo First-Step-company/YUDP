@@ -25,10 +25,14 @@ import {
           <Typography variant="h5" color="blue-gray" className="mb-2">
             {service.name}
           </Typography>
-          <Typography className="max-w-48">{service.description}</Typography>
+          <Typography data-tooltip-target="tooltip-default"  type="button"title={service.description} className="truncate">{service.description}</Typography>
+        <div id="tooltip-default" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Tooltip content
+            <div className="tooltip-arrow" data-popper-arrow></div>
+        </div>
         </CardBody>
         <CardFooter className="pt-0 flex justify-between items-center space-x-4">
-          <Button className="text-white bg-[#8A84F1] px-4 py-2">
+          <Button className="text-white bg-[#8A84F1] px-4 py-2 ">
             From {service.price}
           </Button>
           {service.popular && (
